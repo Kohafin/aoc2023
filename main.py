@@ -7,7 +7,7 @@ def get_args():
     return args
 
 def get_input(module_name):
-    f = open('inputs/' + module_name + '.txt', 'r')
+    f = open('inputs/' + module_name[:2] + '.txt', 'r')
     response = f.read()
     f.close()
     return response
